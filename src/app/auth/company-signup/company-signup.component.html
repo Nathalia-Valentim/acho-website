@@ -1,0 +1,37 @@
+<app-navgreen></app-navgreen> 
+<app-login-dashboard></app-login-dashboard>
+
+<section>
+  <div class="login-card">
+    <h1>Sign Up</h1>
+    <form>
+      <div class="input-group">
+        <span class="material-icons">email</span>
+        <input type="email" placeholder="abc@email.com" required />
+      </div>
+      <div class="input-group">
+        <span class="material-icons">lock</span>
+        <input type="password" placeholder="senha" required />
+      </div>
+      <div class="input-group">
+        <span class="material-icons">lock</span>
+        <input type="password" placeholder="confirmar senha" required />
+      </div>
+      <button type="submit" class="login-button">Cadastre-se</button>
+    </form>
+    <div class="divider">
+      <span>OU</span>
+    </div>
+    <div class="login-icons">
+      <button class="icon-button">
+        <img src="images/google.png" alt="" class="material-icons">
+      </button>
+      <button class="icon-button">
+        <img src="images/face.png" alt="" class="material-icons">
+      </button>
+    </div>
+    <p class="signup">
+      Já tem uma conta? <a href="#" (click)="navegarParaLogin()">Entre</a>
+    </p>
+  </div>
+</section>

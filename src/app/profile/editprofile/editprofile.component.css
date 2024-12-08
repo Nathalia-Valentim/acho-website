@@ -1,0 +1,635 @@
+section {
+    padding: 32px 0 0 56px;
+}
+
+.informacoes {
+    display: flex;
+    justify-content: space-evenly;
+    width: 518px;
+}
+
+.image {
+    width: 184px;
+    height: 184px;
+    display: block;
+    justify-items: center;
+}
+
+.profile_image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    color: #403939;
+    padding-top: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    cursor: pointer;
+}
+
+h2:hover {
+    color: #E15C31;
+    transition: 0.4s ease;
+}
+
+.infos_principais {
+    padding-left: 64px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+}
+
+.edit {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    cursor: pointer;
+}
+
+.material-icons {
+    font-size: 22px;
+}
+
+.icone_edit {
+    width: 22px;
+    height: 22px;
+    color: #043B64;
+}
+
+h3 {
+    font-size: 16px;
+    padding-left: 8px;
+    margin: 0;
+    color: #043B64;
+}
+
+.social-icons {
+    padding-top: 12px;
+}
+  
+.socials {
+    padding-right: 12px;
+    width: 28px;
+    height: 28px;
+}
+
+.informacoes_dois {
+    padding-top: 32px;
+    width: 506px;
+    display: flex;
+    justify-items: flex-start;
+    justify-content: space-between;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    margin: 0;
+    padding-bottom: 6px;
+    color: #043B64;
+}
+
+input {
+    width: 224px;
+    height: 34px;
+    padding-left: 8px;
+    border: 1px solid #40393966;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: none;
+    font-family: dm sans;
+}
+  
+input:focus {
+    outline: none;
+    caret-color: #403939CC;
+    color: #403939;
+    font-family: dm sans;
+}
+
+input:not(:focus) {
+    color: #403939;
+}
+  
+::placeholder {
+    color: #a3a3a3;
+}
+
+.input-container {
+    padding-bottom: 16px;
+}
+
+select {
+    width: 236px;
+    height: 34px; 
+    padding-left: 6px;
+    border: 1px solid #40393966; 
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: dm sans; 
+    background-color: none; 
+    cursor: pointer;
+    appearance: auto;
+    background-repeat: no-repeat;
+}
+
+select:focus {
+    outline: none;
+    caret-color: #403939CC;
+    color: #403939;
+    font-size: 16px;
+}
+
+select:not(:focus) {
+    outline: none; 
+    color: #40393999;
+    font-size: 16px;
+}
+
+option {
+    border: 1px solid #40393966; 
+    border-radius: 10px;
+    color: #403939;
+    font-size: 16px;
+    font-family: dm sans; 
+    background-color: #ffffffe8;
+}
+
+option:hover {
+    background-color: #E15C31;
+    color: #ffffff;
+}
+
+.select-container {
+    position: relative;
+}
+
+.select-container i {
+    position: absolute;
+    color: #40393999;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+}
+
+.botao {
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    padding-top: 50px;
+}
+
+.salvar {
+    height: 47px;
+    width: 176px;
+    background-color: #043B64;
+    color: #ffffff;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.20);
+    font-weight: 500;
+    font-size: 16px;
+    font-family: dm sans;
+}
+
+.salvar:hover {
+    background-color: #E15C31;
+    color: #ffffff;
+    transition: background-color 0.5s ease;
+}
+  
+.salvar:not(:hover) {
+    transition: background-color 0.5s ease;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    section {
+        padding: 32px 0 0 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 32px 66px 0 20px;
+    }
+
+    .informacoes {
+        align-items: center;
+        width: 100%;
+        justify-content: start;
+    }
+
+    .image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .infos_principais {
+        padding-left: 0;
+        text-align: start;
+        padding-left: 32px;
+    }
+
+    .informacoes_dois {
+        width: 100%;
+        gap: 38px;
+    }
+
+    .esquerda, .direita {
+        width: 100%;
+    }
+
+    .socials {
+        padding-bottom: 12px;
+        padding-right: 10px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .social-icons {
+        padding-top: 0;
+    }
+
+    h4 {
+        font-size: 14px;
+        padding-bottom: 6px;
+    }
+
+    input {
+        width: 178px;
+        height: 26px;
+        padding-left: 8px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+
+    select {
+        width: 191px;
+        height: 30px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    .botao {
+        justify-content: right;
+        padding-top: 44px;
+    }
+    
+    .salvar {
+        height: 34px;
+        width: 164px;
+        border-radius: 12px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section {
+        padding: 24px 44px 0 0;
+    }
+
+    .informacoes {
+        align-items: center;
+        width: 100%;
+        justify-content: start;
+    }
+
+    .image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .infos_principais {
+        padding-left: 32px;
+        text-align: start;
+        padding-left: 16px;
+    }
+
+    .material-icons {
+        font-size: 18px;
+    }
+    
+    .icone_edit {
+        width: 18px;
+        height: 18px;
+        color: #043B64;
+    }
+
+    .informacoes_dois {
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        padding-top: 16px;
+    }
+
+    .esquerda, .direita {
+        width: 100%;
+        text-align: start;
+    }
+    
+    .direita {
+        padding-top: 0;
+    }
+
+    .socials {
+        padding-bottom: 12px;
+        padding-right: 10px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .social-icons {
+        padding-top: 0;
+    }
+
+    h4 {
+        padding-bottom: 6px;
+        font-size: 14px;
+    }
+
+    input {
+        width: 178px;
+        height: 26px;
+    }
+
+    .genero select {
+        padding-top: 1px;
+        font-size: 15px;
+        font-family: dm sans;
+    }
+
+    .genero select option {
+        font-size: 15px;
+        color: #403939;
+        font-family: dm sans;
+    }
+      
+    select {
+        width: 160px;
+        height: 30px; 
+    }
+
+    .info {
+        width: 93%;
+    }
+
+    option {
+        border-radius: 10px;
+    }
+
+    .botao {
+        justify-content: right;
+        padding-top: 32px;
+        padding-right: 10px;
+    }
+    
+    .salvar {
+        height: 34px;
+        width: 164px;
+        border-radius: 12px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    section {
+        padding: 24px 30px 0 0;
+    }
+
+    .image {
+        width: 104px;
+        height: 104px;
+    }
+
+    h2 {
+        font-size: 12px;
+    }
+
+    .infos_principais {
+        padding-left: 32px;
+        text-align: start;
+        padding-left: 16px;
+    }
+
+    .material-icons {
+        font-size: 18px;
+    }
+    
+    .icone_edit {
+        width: 18px;
+        height: 18px;
+        color: #043B64;
+    }
+
+    .informacoes_dois {
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        padding-top: 16px;
+    }
+
+    .esquerda, .direita {
+        width: 100%;
+        text-align: start;
+    }
+    
+    .direita {
+        padding-top: 0;
+    }
+
+    .socials {
+        padding-bottom: 12px;
+        padding-right: 10px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .social-icons {
+        padding-top: 0;
+    }
+
+    h4 {
+        padding-bottom: 4px;
+        font-size: 14px;
+    }
+
+    input {
+        width: 178px;
+        height: 22px;
+        font-size: 13px;
+        width: 100%;
+    }
+    
+    .info {
+        width: 86%;
+    }
+
+    .input-container {
+        padding-bottom: 12px;
+    }
+
+    .genero select {
+        padding-top: 1px;
+        font-size: 15px;
+        font-family: dm sans;
+    }
+
+    .genero select option {
+        font-size: 15px;
+        color: #403939;
+        font-family: dm sans;
+    }
+
+    select {
+        width: 160px;
+        height: 26px; 
+    }
+
+    option {
+        border-radius: 10px;
+    }
+
+    .botao {
+        justify-content: right;
+        padding-top: 32px;
+        padding-right: 10px;
+    }
+    
+    .salvar {
+        height: 32px;
+        width: 156px;
+        border-radius: 12px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    section {
+        padding: 24px 30px 0 0;
+    }
+
+    .image {
+        width: 80px;
+        height: 80px;
+    }
+
+    h2 {
+        font-size: 12px;
+        width: 40px;
+        text-align: center;
+    }
+
+    .infos_principais {
+        padding-left: 32px;
+        text-align: start;
+        padding-left: 24px;
+    }
+
+    .material-icons {
+        font-size: 18px;
+    }
+    
+    .icone_edit {
+        width: 18px;
+        height: 18px;
+        color: #043B64;
+    }
+
+    .informacoes_dois {
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        padding-top: 16px;
+    }
+
+    .esquerda, .direita {
+        width: 100%;
+        text-align: start;
+    }
+    
+    .direita {
+        padding-top: 0;
+    }
+
+    .socials {
+        padding-bottom: 12px;
+        padding-right: 10px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .social-icons {
+        padding-top: 0;
+    }
+
+    h4 {
+        padding-bottom: 2px;
+        font-size: 12px;
+    }
+
+    input {
+        width: 176px;
+        height: 20px;
+        border-radius: 8px;
+        font-size: 12px;
+        width: 100%;
+    }
+    
+    .info {
+        width: 95%;
+    }
+
+    .input-container {
+        padding-bottom: 12px;
+    }
+
+    .genero select {
+        padding-top: 1px;
+        font-size: 13px;
+        font-family: dm sans;
+    }
+
+    .genero select option {
+        font-size: 13px;
+        color: #403939;
+        font-family: dm sans;
+        height: 24px;
+    }
+
+    select {
+        width: 160px;
+        height: 24px;
+        border-radius: 8px; 
+    }
+
+    option {
+        border-radius: 10px;
+        height: 24px;
+    }
+
+    .botao {
+        justify-content: right;
+        padding-top: 32px;
+        padding-right: 0;
+    }
+    
+    .salvar {
+        height: 30px;
+        width: 144px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+}

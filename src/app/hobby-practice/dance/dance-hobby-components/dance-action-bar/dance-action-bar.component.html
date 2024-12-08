@@ -1,0 +1,10 @@
+<div class="barra-horizontal">
+    <button class="botao" [class.ativo]="ativoBotao === 'pratique-seu-hobby'" (click)="carregarComponente('dance-practiceyourhobby')">PRATIQUE SEU HOBBY</button>
+    <button class="botao" [class.ativo]="ativoBotao === 'dance-origin'" (click)="carregarComponente('dance-origin')">ORIGEM</button>
+    <button class="botao" [class.ativo]="ativoBotao === 'fundamentals'" (click)="carregarComponente('dance-fundamentals')">FUNDAMENTOS</button>
+    <button class="botao" [class.ativo]="ativoBotao === 'benefits'" (click)="carregarComponente('dance-benefits')">BENEFÍCIOS</button>
+    <button class="botao" [class.ativo]="ativoBotao === 'materials'" (click)="carregarComponente('dance-materials')">MATERIAIS</button>
+    <button class="botao" [class.ativo]="ativoBotao === 'tips'" (click)="carregarComponente('dance-tips')">DICAS</button>
+    <button class="botao" [class.ativo]="ativoBotao === 'events'" (click)="carregarComponente('dance-events')">EVENTOS</button>
+</div>
+<router-outlet></router-outlet>

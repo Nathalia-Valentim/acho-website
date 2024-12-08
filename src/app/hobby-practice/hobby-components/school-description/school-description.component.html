@@ -1,0 +1,116 @@
+<div class="background-container">
+  <header [ngClass]="currentScreenSize">
+    <div class="logo">
+      <a [routerLink]="['/home']">
+        <img src="images/logobranca.png">
+      </a>
+    </div>
+  
+    <div class="nav-container">
+      <nav *ngIf="currentScreenSize !== 'mobile'">
+        <a [routerLink]="['/home']" class="nav-link">Hobbies</a>
+        <a [routerLink]="['/quizdash']" class="nav-link">Quiz</a>
+        <a [routerLink]="['/home']" class="nav-link nav-link-contate">Contate-nos</a>
+      </nav>
+  
+      <div class="overlay" *ngIf="sidebarOpen">
+        <div class="sidebar-content" (click)="$event.stopPropagation()">
+          <div class="sidebar_logo">
+            <img src="images/logo1.png">
+            <button class="close-btn" (click)="toggleSidebar()">
+              <a class="button-link"><i class="material-icons">close</i></a>
+            </button>
+          </div>
+    
+          <nav>
+            <a [routerLink]="['/home']" class="sidebar-link">Hobbies</a>
+            <a [routerLink]="['/quizdash']" class="sidebar-link">Quiz</a>
+            <a [routerLink]="['/contate']" class="sidebar-link">Contate-nos</a>
+          </nav>
+        </div>
+      </div>
+
+        
+      <div class="user-actions">
+        <div class="search-wrapper" [class.active]="searchActive">
+          <i class="material-icons search-icon" (click)="toggleSearch()">search</i>
+          <input
+            *ngIf="searchActive"
+            type="text"
+            class="search-input"
+            [(ngModel)]="searchQuery"
+            placeholder="Pesquise aqui..."
+          />
+        </div>
+        <a [routerLink]="['/profile']" class="icon-link person-link"><i class="material-icons">person</i></a>
+      </div>
+
+
+      <button class="menu-actions" *ngIf="currentScreenSize === 'mobile'" (click)="toggleSidebar()">
+        <a class="menu-link"><i class="material-icons">menu</i></a>
+      </button>
+    </div>
+  </header>
+  
+
+  <div class="dynamic-content">
+    <div class="category-info">
+      <img [src]="categoryImage" alt="{{ categoryName }} Image" />
+      <h1 class="category-name">{{ categoryName }}</h1>
+    </div>
+  </div>
+
+
+
+
+<section>
+  <div class="navegar">
+    <span class="escolas">Escolas > </span>
+    <span class="centro-treinamento">Centro de Treinamento Remo</span>
+  </div>
+  
+  <div class="school-description">
+    <h1 class="school-name">Centro de Treinamento Remo</h1>
+  
+    <div class="image-container">
+      <img src="images/remoschool1.png" class="school-image">
+      <img src="images/remoschool2.png" class="school-image">
+      <img src="images/remoschool3.png" class="school-image">
+    </div>
+  
+    <h2 class="training-title">Escola de treinamento infanto-juvenil</h2>
+  
+    <p class="description">
+      O Centro de Treinamento Remo é ideal para jovens atletas, oferecendo uma formação de alta qualidade com técnicas avançadas e um ambiente muito estimulante. Aqui, cada treino é uma oportunidade para aprimorar habilidades, desenvolver a paixão pelo futebol e alcançar novos objetivos, sempre em um espaço acolhedor e motivador.
+    </p>
+  
+    <div class="info-section">
+      <div class="info-text">
+        <p>
+          <span class="material-icons">calendar_month</span><strong>Horários e Dias de Aula: </strong> Segunda a sexta-feira, das 16h às 18h
+        </p>
+        <p>
+          <span class="material-icons">location_on</span> <strong>Endereço:</strong> Campos Amarelos, 786 - Jardim Gabriela I, São Paulo, SP
+        </p>
+        <p>
+          <span class="material-icons">phone</span> <strong>Contato:</strong> (11) 98765-4321 | Email: contato&#64;centroremo.com.br
+        </p>
+        <p>
+          <span class="material-icons">verified_user</span> Profissionais qualificados e certificados
+        </p>
+        <p>
+          Estacionamento gratuito | Acesso para cadeirantes | Equipamentos de qualidade
+        </p>
+      </div>
+      <div class="investment-box">
+        <p class="investment-minimium">R$80,00</p>
+        <p class="cost-note">por semana</p>
+      </div>
+    </div>
+  
+    <button mat-raised-button class="register-button" [routerLink]="['/forms_student']">Inscreva-se</button>
+  </div>
+</section>
+
+<app-ratings></app-ratings>
+<app-footer></app-footer>

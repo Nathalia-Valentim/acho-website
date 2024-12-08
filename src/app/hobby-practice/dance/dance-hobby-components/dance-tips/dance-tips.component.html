@@ -1,0 +1,33 @@
+<app-navblue [categoryName]="'DANÇA'" 
+[categoryImage]="'images/dancenavv.png'"
+[description]="'A dança é uma forma de expressão universal que combina movimentos corporais e música, capaz de encantar pessoas de todas as idades e culturas. Seja como passatempo ou carreira profissional, dançar oferece benefícios físicos e emocionais, permitindo uma conexão profunda com diferentes estilos e tradições ao redor do mundo.'"
+[minInvestment]="'R$70,00'"></app-navblue>
+<app-dance-action-bar></app-dance-action-bar>
+
+<router-outlet></router-outlet>
+<div class="tips-container">
+    <p class="tips-title">Os praticantes possuem ótimas dicas para você!</p>
+  
+
+    <div class="tips-gallery">
+      <div *ngFor="let tip of tips" class="tip-container">
+        <p class="tip-text">{{ tip }}</p>
+      </div>
+    </div>
+  
+
+    <div class="spacing"></div>
+
+    <p class="tips-share">Compartilhe uma dica você também!</p>
+  
+    <div class="ratings-container">
+        <div class="submit-rating">
+          <textarea [(ngModel)]="newTip" class="rating-input" placeholder="Adicione uma dica..."></textarea>
+          <button (click)="submitTip()" class="submit-button material-icons">send</button>
+        </div>
+      </div>
+  </div>
+  
+
+
+<app-footer></app-footer>  

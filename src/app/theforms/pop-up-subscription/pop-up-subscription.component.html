@@ -1,0 +1,14 @@
+<div class="modal" *ngIf="isVisible" (click)="fecharModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h5>Formulário Enviado</h5>
+      </div>
+      <div class="modal-body">
+        <p>Formulário enviado com sucesso! Verifique seu e-mail para mais informações.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-primary" (click)="redirecionarParaFutebol()">OK</button>
+      </div>
+    </div>
+  </div>
+  
