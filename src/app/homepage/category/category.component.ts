@@ -10,11 +10,9 @@ import { Router, RouterModule } from '@angular/router';
   templateUrl: './category.component.html',
   styleUrl: './category.component.css'
 })
+
 export class CategoryComponent implements AfterViewInit{ 
-  constructor(private breakpointObserver: BreakpointObserver,
-    private router: Router,
-    @Inject(PLATFORM_ID) private platformId: any
-  ) {
+  constructor(private breakpointObserver: BreakpointObserver, private router: Router, @Inject(PLATFORM_ID) private platformId: any) {
     this.observeScreenSize();
   }
 
@@ -67,16 +65,15 @@ export class CategoryComponent implements AfterViewInit{
 
   scrollCarrossel(direction: number): void {
     if (isPlatformBrowser(this.platformId)) {
-    const container = document.querySelector('.categorias-container') as HTMLElement;
-    if (container) {
-      const scrollAmount = 150; 
-      container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
-
-      
-      setTimeout(() => this.updateArrowsVisibility(container), 300);
+      const container = document.querySelector('.categorias-container') as HTMLElement;
+      if (container) {
+        const scrollAmount = 150; 
+        container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+        
+        setTimeout(() => this.updateArrowsVisibility(container), 300);
+      }
     }
   }
-}
 
   updateArrowsVisibility(container: HTMLElement): void {
     const scrollLeft = container.scrollLeft;
@@ -92,11 +89,11 @@ export class CategoryComponent implements AfterViewInit{
   
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) {
-    const container = document.querySelector('.categorias-container') as HTMLElement;
-    if (container) {
-      this.updateArrowsVisibility(container);
-      container.addEventListener('scroll', () => this.updateArrowsVisibility(container));
+      const container = document.querySelector('.categorias-container') as HTMLElement;
+      if (container) {
+        this.updateArrowsVisibility(container);
+        container.addEventListener('scroll', () => this.updateArrowsVisibility(container));
+      }
     }
   }
-}
 }

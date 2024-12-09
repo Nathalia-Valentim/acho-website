@@ -16,13 +16,13 @@
       <div class="overlay" *ngIf="sidebarOpen">
         <div class="sidebar-content" (click)="$event.stopPropagation()">
           <div class="sidebar_logo">
-            <img src="images/logobranca.png">
+            <img src="images/logoazul.png">
             <button class="close-btn" (click)="toggleSidebar()">
               <a class="button-link"><i class="material-icons">close</i></a>
             </button>
           </div>
     
-          <nav>
+          <nav class="sidebar">
             <a [routerLink]="['/home']" class="sidebar-link">Hobbies</a>
             <a [routerLink]="['/quizdash']" class="sidebar-link">Quiz</a>
             <a [routerLink]="['/contate']" class="sidebar-link">Contate-nos</a>

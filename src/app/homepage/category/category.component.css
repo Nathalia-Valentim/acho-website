@@ -7,6 +7,8 @@ section {
 .categorias-header {
   padding-bottom: 18px;
   padding-left: 6px;
+  display: flex;
+  align-items: center;
 }
 
 .title {
@@ -14,11 +16,6 @@ section {
   font-size: 20px;
   font-weight: 600;
   color: #E15C31;
-}
-
-.categorias-header {
-  display: flex;
-  align-items: center;
 }
 
 .categorias-container {

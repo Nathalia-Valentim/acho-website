@@ -1,5 +1,5 @@
 .maps-info {
-  padding: 22px 0 0 168px;
+  padding: 22px 164px 0 166px;
   padding-bottom: 15px;
 }
 
@@ -54,13 +54,13 @@ p.gray-text {
 .map-container {
   position: relative;
   height: 100%;
-  width: 100%;
+  width: 76.5%;
   padding-left: 173px;
 }
 
 #map {
   height: 500px;
-  width: 50%;
+  width: 100%;
 }
 
 .search-box {

@@ -1,28 +1,28 @@
-<div class="maps-info">
-  <label class="blue-text">Selecione sua área de alcance</label>
-  <p class="gray-text">: selecione ou digite sua área de alcance.</p>
-</div>
-
-<div class="map-container">
-  <div class="search-box">
-    <input
-      id="autocomplete"
-      type="text"
-      placeholder="Digite um endereço ou local"
-    />
+<section>
+  <div class="maps-info">
+    <label class="blue-text">Selecione sua área de alcance</label>
+    <p class="gray-text">: selecione ou digite sua área de alcance.</p>
   </div>
-  <div id="map"></div>
-</div>
-
-<div class="button-container">
-  <button id="filter-button" (click)="showResults = !showResults">
-    Aplicar Filtros
-  </button>
-</div>
-
-
-<div *ngIf="showResults">
-  <app-result></app-result>
-</div>
   
-
+  <div class="map-container">
+    <div class="search-box">
+      <input
+        id="autocomplete"
+        type="text"
+        placeholder="Digite um endereço ou local"
+      />
+    </div>
+    <div id="map"></div>
+  </div>
+  
+  <div class="button-container">
+    <button id="filter-button" (click)="showResults = !showResults">
+      Aplicar Filtros
+    </button>
+  </div>
+  
+  
+  <div *ngIf="showResults">
+    <app-result></app-result>
+  </div>
+</section>

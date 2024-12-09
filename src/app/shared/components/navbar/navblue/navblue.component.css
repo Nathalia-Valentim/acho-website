@@ -84,13 +84,12 @@ nav {
   flex-direction: column;
   z-index: 1000; 
   padding: 40px 40px;
-  background-color: #043B64;
 }
 
 .close-btn {
   background-color: transparent;
   border: none;
-  color: #E3E2DD;
+  color: #043B64;
   justify-content: flex-end;
 }
 
@@ -108,7 +107,7 @@ nav {
 }
 
 .sidebar-link {
-  color: #E3E2DD;
+  color: #403939;
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
@@ -186,7 +185,7 @@ nav {
 
 /* Nav Continuação */
 .section {
-  padding: 0 152px 0 118px;
+  padding: 0 152px 0 116px;
 }
 
 .category-info {
@@ -214,7 +213,7 @@ h1 {
 
 .info-container {
   display: flex; 
-  padding-left: 52px;
+  padding-left: 50px;
 }
 
 p {

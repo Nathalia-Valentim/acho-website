@@ -28,7 +28,6 @@ export class SidebarComponent implements OnInit {
       });
   }
 
-
   updateSelectedButton() {
     const currentRoute = this.router.url;
 
@@ -44,8 +43,8 @@ export class SidebarComponent implements OnInit {
       this.selectedButton = 'notificacoes';
     } else {
       this.selectedButton = '';
+    }
   }
-}
 
   navigateTo(route: string): void {
     this.router.navigate([route]);

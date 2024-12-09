@@ -1,29 +1,27 @@
-/* Estilos do texto fora da borda */
-.filter-info {
-  padding: 22px 0 0px 168px;
+section {
+  padding: 22px 0 0px 166px;
 }
 
 .gray-text {
   color: #403939;
-  font-size: 18px;
-  margin: 0;
-}
-
-h3 {
-  padding-bottom: 8px;
-}
-
-.blue-text {
-  color: #043B64;
-  font-size: 18px;
+  font-size: 20px;
+  padding-bottom: 22px;
   font-weight: 600;
   margin: 0;
 }
 
-p.gray-text {
+.blue-text {
+  color: #043B64;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.gray-info {
   color: #403939;
-  padding-top: 4px;
-  margin-bottom: 16px;
+  margin: 0;
+  font-size: 20px;
+  padding-top: 8px;
 }
 
 .container-total {
