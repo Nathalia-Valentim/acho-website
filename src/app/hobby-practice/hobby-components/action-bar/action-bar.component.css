@@ -89,6 +89,14 @@ section {
       z-index: 2; 
     }
 
+    .arrow.left {
+        left: 68px;
+    }
+    
+    .arrow.right {
+        right: 64px;
+    }
+
     .botao {
         border-radius: 20px;
         padding: 6px 24px 6px;
@@ -98,7 +106,7 @@ section {
 
 @media screen and (max-width: 768px) {
     section {
-        padding: 208px 62px 40px 56px;
+        padding: 208px 62px 40px;
         overflow: visible; 
     }
 

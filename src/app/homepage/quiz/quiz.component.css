@@ -1,5 +1,5 @@
 section {
-  padding: 12px 164px 24px 166px;
+  padding: 12px 154px 24px 166px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -54,7 +54,7 @@ button:hover {
   color: #e15c31;
 }
 
-
+/* Responsividade */
 @media screen and (max-width: 1024px) {
   section {
     padding: 12px 108px 24px 114px;

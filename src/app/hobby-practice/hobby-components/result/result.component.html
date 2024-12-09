@@ -1,4 +1,12 @@
-<div class="card-container">
+<section>
+  <div 
+  class="carousel" 
+  #carousel 
+  (mousedown)="startDragging($event)" 
+  (mousemove)="dragging($event)" 
+  (mouseup)="stopDragging()" 
+  (mouseleave)="stopDragging()"
+  >
     <div class="card" *ngFor="let school of schools">
       <img [src]="school.image" alt="{{ school.title }}" class="card-image">
       
@@ -23,4 +31,5 @@
       </div>
     </div>
   </div>
+</section>
   

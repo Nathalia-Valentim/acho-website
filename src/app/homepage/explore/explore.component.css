@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 152px 8px 165px;
+  padding: 20px 142px 8px 166px;
 
 }
 
@@ -45,7 +45,7 @@ button.seta-esquerda {
   scroll-snap-type: x mandatory;
   cursor: grab;
   gap: 16px;
-  padding: 8px 162px 20px 164px;
+  padding: 8px 150px 20px 166px;
   scrollbar-width: none;
   user-select: none; 
 }
@@ -274,8 +274,4 @@ button.seta-esquerda {
     font-size: 10px;
     border-radius: 10px;
   }
-}
-
-@media screen and (max-width: 320px) {
-
 }
