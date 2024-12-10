@@ -14,17 +14,17 @@ NavbarComponent
   templateUrl: './forms-subscription.component.html',
   styleUrl: './forms-subscription.component.css'
 })
-export class FormsSubscriptionComponent {
 
+export class FormsSubscriptionComponent {
   formulario: FormGroup;
-  mostrarModal: boolean = false; 
+  mostrarModal: boolean = false;
 
   constructor(private fb: FormBuilder,  private router: Router) {
     this.formulario = this.fb.group({
       nome: ['', Validators.required],
       DataDeNascimento: [''],
       rg: ['', [Validators.required, Validators.pattern(/^\d{9}$/)]],
-  
+
       endereco: this.fb.group({
         cep: ['', [Validators.required, Validators.pattern(/^\d{8}$/)]],
         estado: ['', Validators.required],
@@ -45,7 +45,7 @@ export class FormsSubscriptionComponent {
   onSubmit() {
     if (this.formulario.valid) {
       console.log('Dados do formulário:', this.formulario.value);
-      this.mostrarModal = true;  
+      this.mostrarModal = true;
       this.formulario.reset();
     } else {
       alert('Por favor, preencha os campos obrigatórios!');
@@ -57,6 +57,7 @@ export class FormsSubscriptionComponent {
   }
 
   redirecionarParaCompany() {
+    window.scrollTo(0, 0);
     this.router.navigate(['/football']);
   }
 

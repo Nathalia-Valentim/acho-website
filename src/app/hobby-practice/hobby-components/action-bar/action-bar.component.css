@@ -11,9 +11,9 @@ section {
     scroll-snap-type: x mandatory;
     cursor: pointer;
     position: relative;
-    z-index: 1; 
+    z-index: 1;
     scrollbar-width: none;
-    user-select: none; 
+    user-select: none;
 }
 
 .categorias-carousel {
@@ -21,7 +21,7 @@ section {
     align-items: center;
     position: relative;
 }
-  
+
 .arrow {
     width: 40px;
     height: 40px;
@@ -32,7 +32,7 @@ section {
     position: absolute;
     top: 65.4%;
     transform: translateY(-50%);
-    z-index: 0; 
+    z-index: 0;
     display: none;
 }
 
@@ -51,7 +51,7 @@ section {
 
 .botao {
     border: 2px solid #043B64;
-    background-color: transparent; 
+    background-color: transparent;
     color: #043B64;
     border-radius: 20px;
     padding: 6px 24px 6px;
@@ -65,35 +65,35 @@ section {
 .botao:hover {
     background-color: #043B64;
     color: #E15C31;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .botao.ativo {
-    background-color: #043B64; 
+    background-color: #043B64;
     color: #E15C31;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* Responsividade */
 @media screen and (max-width: 1024px) {
     section {
       padding: 256px 108px 24px 112px;
-      overflow: visible; 
+      overflow: visible;
     }
-  
+
     .action-container {
       gap: 16px;
     }
-  
+
     .arrow {
       display: block;
-      z-index: 2; 
+      z-index: 2;
     }
 
     .arrow.left {
         left: 68px;
     }
-    
+
     .arrow.right {
         right: 64px;
     }
@@ -108,27 +108,27 @@ section {
 @media screen and (max-width: 768px) {
     section {
         padding: 208px 62px 40px;
-        overflow: visible; 
+        overflow: visible;
     }
 
     .action-container {
         gap: 12px;
     }
-    
+
     .categoria {
-        width: 80px; 
+        width: 80px;
     }
-    
+
     .arrow {
         top: 58%;
         display: block;
-        z-index: 2; 
+        z-index: 2;
     }
 
     .arrow.left {
         left: 18px;
     }
-    
+
     .arrow.right {
         right: 24px;
     }
@@ -143,27 +143,27 @@ section {
 @media screen and (max-width: 480px) {
     section {
         padding: 316px 42px 24px 38px;
-        overflow: visible; 
+        overflow: visible;
     }
 
     .action-container {
         gap: 8px;
     }
-    
+
     .categoria {
-        width: 80px; 
+        width: 80px;
     }
-    
+
     .arrow {
         top: 68.1%;
         display: block;
-        z-index: 2; 
+        z-index: 2;
     }
 
     .arrow.left {
         left: 6px;
     }
-    
+
     .arrow.right {
         right: 10px;
     }
@@ -178,27 +178,27 @@ section {
 @media screen and (max-width: 380px) {
     section {
         padding: 332px 34px 24px 30px;
-        overflow: visible; 
+        overflow: visible;
     }
 
     .action-container {
         gap: 8px;
     }
-    
+
     .categoria {
-        width: 80px; 
+        width: 80px;
     }
-    
+
     .arrow {
         top: 66.7%;
         display: block;
-        z-index: 2; 
+        z-index: 2;
     }
 
     .arrow.left {
         left: -2px;
     }
-    
+
     .arrow.right {
         right: 0px;
     }

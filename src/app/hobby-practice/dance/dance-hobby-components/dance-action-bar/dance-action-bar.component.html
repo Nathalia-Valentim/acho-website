@@ -1,10 +1,23 @@
-<div class="barra-horizontal">
-    <button class="botao" [class.ativo]="ativoBotao === 'pratique-seu-hobby'" (click)="carregarComponente('dance-practiceyourhobby')">PRATIQUE SEU HOBBY</button>
-    <button class="botao" [class.ativo]="ativoBotao === 'dance-origin'" (click)="carregarComponente('dance-origin')">ORIGEM</button>
-    <button class="botao" [class.ativo]="ativoBotao === 'fundamentals'" (click)="carregarComponente('dance-fundamentals')">FUNDAMENTOS</button>
-    <button class="botao" [class.ativo]="ativoBotao === 'benefits'" (click)="carregarComponente('dance-benefits')">BENEFÍCIOS</button>
-    <button class="botao" [class.ativo]="ativoBotao === 'materials'" (click)="carregarComponente('dance-materials')">MATERIAIS</button>
-    <button class="botao" [class.ativo]="ativoBotao === 'tips'" (click)="carregarComponente('dance-tips')">DICAS</button>
-    <button class="botao" [class.ativo]="ativoBotao === 'events'" (click)="carregarComponente('dance-events')">EVENTOS</button>
-</div>
+<section>
+  <div class="action-carousel">
+      <button class="arrow left" *ngIf="showLeftArrow" (click)="scrollCarrossel(-1)">
+          <span class="material-icons">chevron_left</span>
+      </button>
+
+      <div class="action-container">
+          <button class="botao" [ngClass]="{'ativo': selectedButton === 'practiceyourhobby'}" (click)="navigateTo('dance-practiceyourhobby')">PRATIQUE SEU HOBBY</button>
+          <button class="botao" [ngClass]="{'ativo': selectedButton === 'origin'}" (click)="navigateTo('dance-origin')">ORIGEM</button>
+          <button class="botao" [ngClass]="{'ativo': selectedButton === 'fundamentals'}" (click)="navigateTo('dance-fundamentals')">FUNDAMENTOS</button>
+          <button class="botao" [ngClass]="{'ativo': selectedButton === 'benefits'}" (click)="navigateTo('dance-benefits')">BENEFÍCIOS</button>
+          <button class="botao" [ngClass]="{'ativo': selectedButton === 'materials'}" (click)="navigateTo('dance-materials')">MATERIAIS</button>
+          <button class="botao" [ngClass]="{'ativo': selectedButton === 'tips'}" (click)="navigateTo('dance-tips')">DICAS</button>
+          <button class="botao" [ngClass]="{'ativo': selectedButton === 'events'}" (click)="navigateTo('dance-events')">EVENTOS</button>
+      </div>
+
+      <button class="arrow right" *ngIf="showRightArrow" (click)="scrollCarrossel(1)">
+          <span class="material-icons">chevron_right</span>
+      </button>
+  </div>
+</section>
+
 <router-outlet></router-outlet>

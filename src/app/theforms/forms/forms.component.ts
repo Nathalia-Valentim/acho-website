@@ -14,9 +14,10 @@ import { PopUpComponent } from '../pop-up/pop-up.component';
   templateUrl: './forms.component.html',
   styleUrl: './forms.component.css'
 })
+
 export class FormsComponent {
   formulario: FormGroup;
-  mostrarModal: boolean = false; 
+  mostrarModal: boolean = false;
 
   constructor(private fb: FormBuilder, private router: Router) {
     this.formulario = this.fb.group({
@@ -45,7 +46,7 @@ export class FormsComponent {
   onSubmit() {
     if (this.formulario.valid) {
       console.log('Dados do formulário:', this.formulario.value);
-      this.mostrarModal = true;  
+      this.mostrarModal = true;
       this.formulario.reset();
     } else {
       alert('Por favor, preencha os campos obrigatórios!');
@@ -57,12 +58,11 @@ export class FormsComponent {
   }
 
   redirecionarParaCompany() {
+    window.scrollTo(0, 0);
     this.router.navigate(['/company']);
   }
 
   voltarParaContateNav() {
-    this.router.navigate(['../contate'], { relativeTo: this.router.routerState.root.firstChild }); 
+    this.router.navigate(['../contate'], { relativeTo: this.router.routerState.root.firstChild });
   }
-
-
 }

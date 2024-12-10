@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { NavblueComponent } from '../../../shared/components/navbar/navblue/navblue.component';
 import { ActionBarComponent } from '../action-bar/action-bar.component';
 import { FooterComponent } from '../../../shared/components/footer/footer.component';
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-tips',
@@ -16,8 +16,8 @@ import { FormsModule } from '@angular/forms';
 export class TipsComponent {
   tips: string[] = [
     "Utilize exercícios de 'recepção e condução', onde você recebe a bola e imediatamente a conduz em diferentes direções para simular situações de jogo. Isso ajudará a melhorar sua coordenação e o tempo de reação.",
-    "Uma defesa eficaz é uma combinação de posicionamento, leitura de jogo, habilidades de desarme e tomada de decisão rápida. Para melhorar sua defesa, comece com exercícios focados no posicionamento. Aprenda a manter uma postura equilibrada, com os joelhos levemente flexionados e o peso distribuído entre os pés, o que permitirá reagir rapidamente aos movimentos do adversário. Trabalhe para se posicionar corretamente entre o atacante e o gol, garantindo que você esteja sempre alinhado para interceptar passes ou bloquear chutes.",
-    "Para melhorar a precisão dos seus passes, pratique usar o lado interno do pé. Mantenha a perna de apoio levemente flexionada e aponte para o alvo enquanto executa o passe. Trabalhe em curtos passes com um companheiro ou contra uma parede, concentrando-se em manter o contato suave e direcionado na bola.",
+    "Uma defesa eficaz é uma combinação de posicionamento, leitura de jogo, habilidades de desarme e tomada de decisão rápida. Para melhorar sua defesa, comece com exercícios focados no posicionamento. ",
+    "Para melhorar a precisão dos seus passes, é essencial treinar o uso do lado interno do pé, que proporciona maior controle e precisão na bola. Ao realizar o passe, é fundamental manter a perna de apoio levemente flexionada, criando uma base estável para o movimento. Aponte a perna de apoio para o alvo, garantindo que o corpo esteja alinhado corretamente para direcionar a bola com precisão. Lembre-se de que a parte interna do pé deve fazer contato com a bola de maneira suave, não com força excessiva, mas com o controle necessário para que a bola siga a trajetória desejada.",
     "Para aprimorar seu drible, use exercícios específicos que ajudam a desenvolver o controle da bola e a agilidade. Recomendo 'drible em zigue-zague.'",
     "Para melhorar a finalização, mire no gol e pratique diferentes chutes, como com o peito do pé para potência e com a parte interna para precisão.",
     "Use tênis adequados para o tipo de campo em que você joga seja este grama, campo sintético, salões, enfim, é de grande ajuda.",

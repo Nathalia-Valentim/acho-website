@@ -10,10 +10,12 @@ import { Router, RouterModule } from '@angular/router';
   templateUrl: './contact-nav.component.html',
   styleUrl: './contact-nav.component.css'
 })
+
 export class ContactNavComponent {
   constructor(private router: Router) {}
 
   navegarParaForms() {
+    window.scrollTo(0, 0);
     console.log("navegando ate o formulário...");
     this.router.navigate(['/forms_company']).then(success => {
       console.log("Navegação bem-sucedida?", success);

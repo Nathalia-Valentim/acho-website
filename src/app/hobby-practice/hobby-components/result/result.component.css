@@ -124,7 +124,7 @@ section {
   padding: 8px 20px;
   font-size: 14px;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 500;
   transition: background-color 0.3s ease;
   font-family: dm sans;
 }
@@ -132,7 +132,7 @@ section {
 .card-button:hover {
   background-color: transparent;
   color: #043B64;
-  font-weight: bold;
+  font-weight: 500;
   border: 1px solid #043B64;
 }
 
@@ -158,57 +158,57 @@ section {
     height: 560px;
     border-radius: 24px;
   }
-  
+
   .card-image {
     height: 160px;
     padding: 12px 12px 0 12px;
     border-radius: 16px;
   }
-  
+
   .card-title {
     font-size: 15px;
     padding-left: 16px;
   }
-  
+
   .card-category {
     padding-left: 16px;
     font-size: 14px;
   }
-  
+
   .card-description {
     padding: 0 16px 8px;
     font-size: 14px;
     text-align: justify;
   }
-  
+
   .card-info {
     padding-left: 5px;
     padding-right: 16px;
     font-size: 14px;
   }
-  
+
   .material-icons {
     padding: 9px 5px 5px 12px;
 
   }
-  
+
   .card-footer {
     padding: 5px 20px 25px;
   }
-  
+
   .price {
     gap: 4px;
     flex-direction: column;
   }
-  
+
   .price-highlight {
     font-weight: bold;
   }
-  
+
   .price-description {
     font-size: 12px;
   }
-  
+
   .card-button {
     border-radius: 30px;
     padding: 8px 22px;
@@ -232,44 +232,44 @@ section {
     height: 566px;
     border-radius: 24px;
   }
-  
+
   .card-image {
     height: 160px;
     padding: 12px 12px 0 12px;
     border-radius: 16px;
   }
-  
+
   .card-title {
     font-size: 14px;
     padding-left: 16px;
   }
-  
+
   .card-category {
     padding-left: 16px;
     font-size: 13px;
   }
-  
+
   .card-description {
     padding: 0 16px 8px;
     font-size: 13px;
     text-align: justify;
   }
-  
+
   .card-info {
     padding-left: 5px;
     padding-right: 16px;
     font-size: 13px;
   }
-  
+
   .material-icons {
     padding: 9px 5px 5px 12px;
 
   }
-  
+
   .card-footer {
     padding: 5px 20px 25px;
   }
-  
+
   p {
     margin: 0;
   }
@@ -278,15 +278,15 @@ section {
     gap: 4px;
     flex-direction: column;
   }
-  
+
   .price-highlight {
     font-weight: bold;
   }
-  
+
   .price-description {
     font-size: 12px;
   }
-  
+
   .card-button {
     border-radius: 30px;
     padding: 8px 22px;
@@ -310,44 +310,44 @@ section {
     height: 556px;
     border-radius: 24px;
   }
-  
+
   .card-image {
     height: 160px;
     padding: 12px 12px 0 12px;
     border-radius: 16px;
   }
-  
+
   .card-title {
     font-size: 14px;
     padding-left: 16px;
   }
-  
+
   .card-category {
     padding-left: 16px;
     font-size: 13px;
   }
-  
+
   .card-description {
     padding: 0 16px 8px;
     font-size: 13px;
     text-align: justify;
   }
-  
+
   .card-info {
     padding-left: 5px;
     padding-right: 16px;
     font-size: 13px;
   }
-  
+
   .material-icons {
     padding: 9px 5px 5px 12px;
 
   }
-  
+
   .card-footer {
     padding: 5px 20px 25px;
   }
-  
+
   p {
     margin: 0;
   }
@@ -356,15 +356,15 @@ section {
     gap: 4px;
     flex-direction: column;
   }
-  
+
   .price-highlight {
     font-weight: bold;
   }
-  
+
   .price-description {
     font-size: 12px;
   }
-  
+
   .card-button {
     border-radius: 30px;
     padding: 8px 22px;
