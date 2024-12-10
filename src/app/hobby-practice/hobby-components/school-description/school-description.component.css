@@ -1,329 +1,385 @@
 .background-container {
-    background-color: #043B64;
-    width: 100%;
-    height: 580px;
-    z-index: -1;
-  }
+  background-color: #043B64;
+  width: 100%;
+  height: 580px;
+  z-index: -1;
+}
   
-  header {
-    background-color: #043B64;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 64px 32px;
-    position: relative;
-  }
-  
-  .logo img {
-    max-width: 104px;
-    height: auto;
-  }
-  
-  .nav-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  nav {
-    display: flex;
-  }
-  
-  .nav-link {
-    color: #E4E2DD;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 0 16px 0 14px;
-    cursor: pointer;
-  }
-  
-  .nav-link-contate {
-    color: #E15C31;
-  }
-  
-  .person-link {
-    padding-left: 12px;
-  }
-  
-  .menu-link {
-    padding-left: 12px;
-  }
-  
-  .menu-actions {
-    display: flex;
-    align-items: center;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-  }
-  
-  .menu-actions a {
-    color: #E15C31;
-    display: flex;
-    text-decoration: none;
-  }
-  
-  .material-icons {
-    font-size: 24px;
-  }
-  
-  
-  .overlay {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
-  }
-  
-  .sidebar-content {
-    height: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    z-index: 1000; 
-    padding: 40px 40px;
-  }
-  
-  .close-btn {
-    background-color: transparent;
-    border: none;
-    color: #043B64;
-    justify-content: flex-end;
-  }
-  
-  .sidebar_logo {
-    padding-bottom: 28px;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    width: 100%; 
-  }
-  
-  .sidebar_logo img {
-    max-width: 80px;
-    height: auto;
-  }
-  
-  .sidebar-link {
-    color: #403939;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 0 0 10px 0;
-  }
-  
-  
-  .search-wrapper {
-    display: flex;
-    align-items: center;
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    width: 36px;
-    background-color: transparent;
-  }
-  
-  .search-wrapper.active {
-    width: 250px;
-    border: 1px solid #E15C31;
-    background-color: #043B64;
-  }
-  
-  .search-wrapper .search-icon {
-    padding: 8px;
-    color: #E15C31;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  .search-wrapper.active .search-icon {
-    transform: rotate(90deg);
-  }
-  
-  .search-wrapper .search-input {
-    flex-grow: 1;
-    border: none;
-    outline: none;
-    padding: 8px;
-    font-size: 16px;
-    font-family: "dm sans";
-    color: #E4E2DD;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    background-color: transparent;
-  }
-  
-  .search-wrapper.active .search-input {
-    opacity: 1;
-    visibility: visible;
-    background-color: #043B64;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .user-actions {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: transparent;
-    border: none;
-  }
-  
-  .user-actions a {
-    color: #E15C31;
-    display: flex;
-    text-decoration: none;
-  }
-  
-  
-  .category-info {
-    display: flex;
-  }
-  
-  .category-info img {
-    max-width: 550px; 
-    height: auto;
-  }
-  
-  h1 {
-    margin: 0;
-    padding-left: 40px;
-    padding-top: 288px;
-    color: #E4E2DD;
-    font-size: 116px;
-  }
+header {
+  background-color: #043B64;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 64px 32px;
+  position: relative;
+}
+
+.logo img {
+  max-width: 104px;
+  height: auto;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+}
+
+.nav-link {
+  color: #E4E2DD;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 16px 0 14px;
+  cursor: pointer;
+}
+
+.nav-link-contate {
+  color: #E15C31;
+}
+
+.person-link {
+  padding-left: 12px;
+}
+
+.menu-link {
+  padding-left: 12px;
+}
+
+.menu-actions {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.menu-actions a {
+  color: #E15C31;
+  display: flex;
+  text-decoration: none;
+}
+
+.material-icons {
+  font-size: 24px;
+}
 
 
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.sidebar-content {
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000; 
+  padding: 40px 40px;
+}
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+  color: #043B64;
+  justify-content: flex-end;
+}
+
+.sidebar_logo {
+  padding-bottom: 28px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%; 
+}
+
+.sidebar_logo img {
+  max-width: 80px;
+  height: auto;
+}
+
+.sidebar-link {
+  color: #403939;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0 0 10px 0;
+}
 
 
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  width: 36px;
+  background-color: transparent;
+}
 
+.search-wrapper.active {
+  width: 250px;
+  border: 1px solid #E15C31;
+  background-color: #043B64;
+}
+
+.search-wrapper .search-icon {
+  padding: 8px;
+  color: #E15C31;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.search-wrapper.active .search-icon {
+  transform: rotate(90deg);
+}
+
+.search-wrapper .search-input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 16px;
+  font-family: "dm sans";
+  color: #E4E2DD;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.search-wrapper.active .search-input {
+  opacity: 1;
+  visibility: visible;
+  background-color: #043B64;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none;
+}
+
+.user-actions a {
+  color: #E15C31;
+  display: flex;
+  text-decoration: none;
+}
+
+
+.category-info {
+  display: flex;
+}
+
+.category-info img {
+  max-width: 550px; 
+  height: auto;
+}
+
+h1 {
+  margin: 0;
+  padding-left: 40px;
+  padding-top: 288px;
+  color: #E4E2DD;
+  font-size: 116px;
+}
+
+.section {
+  padding: 0 152px 0 116px;
+}
+
+/* Parte da escola */
 section {
-    padding: 0 160px 0 168px;
+  padding: 32px 152px 24px 166px;
 }
 
 .school-description {
-    max-width: 1400px;
-    position: relative;
+  position: relative;
 }
 
 .school-name {
-    color: #043B64;
-    font-weight: bold;
-    font-size: 22px;
-    padding-top: 28px;
-    padding-left: 2px;
+  color: #043B64;
+  font-weight: bold;
+  font-size: 22px;
+  padding-top: 8px;
+  padding-left: 0px;
 }
 
 .image-container {
-    display: flex;
-    gap: 8px;
-    padding-top: 22px;
+  display: flex;
+  gap: 16px;
+  padding-top: 22px;
 }
 
 .school-image {
-    width: 100%;
-    height: 270px;
-    object-fit: cover;
-    border-radius: 20px;
+  width: 32.3%;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .training-title {
-    color: #403939;
-    font-weight: bold;
-    font-size: 18px;
+  padding-top: 24px;
+  color: #403939;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
 }
 
 .description {
-    color: #403939;
-    font-size: 16px;
-    padding: 10px 0;
-    text-align: justify;
+  padding-top: 8px;
+  color: #403939;
+  font-size: 16px;
+  text-align: justify;
+  margin: 0;
 }
 
 .info-section {
-    padding: 50px 0;
-    font-weight: 500;
-    display: flex; 
-    align-items: flex-start;
+  padding: 50px 0;
+  font-weight: 500;
+  display: flex; 
+  align-items: flex-start;
 }
 
 .info-text {
-    flex: 1; 
+  flex: 1; 
 }
 
 .investment-box {
-    background-color: white; 
-    border: 2px solid #043B64;
-    border-radius: 10px;
-    display: flex; 
-    align-items: center; 
-    width: auto; 
-    padding: 12px;
-    padding-left: 20px;
+  background-color: white; 
+  border: 2px solid #043B64;
+  border-radius: 10px;
+  display: flex; 
+  align-items: center; 
+  width: auto; 
+  padding: 12px;
+  padding-left: 20px;
 }
 
 .investment-minimium {
-    color: #e15c31;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0;
-    padding-right: 5px;
+  color: #e15c31;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding-right: 5px;
 }
 
 .cost-note {
-    font-size: 12px;
-    color: #403939;
-    margin: 0;
+  font-size: 12px;
+  color: #403939;
+  margin: 0;
 }
 
-
 .register-button {
-    background-color: #043B64;
-    border: 1px solid #043B64; 
-    border-radius: 30px;
-    color: white;
-    font-size: 18px;
-    padding: 12px 50px; 
-    position: absolute; 
-    right: 2px; 
-    bottom: 20px;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  background-color: #043B64;
+  border: 2px solid #043B64; 
+  border-radius: 30px;
+  color: white;
+  font-size: 18px;
+  padding: 8px 32px; 
+  position: absolute; 
+  right: 2px; 
+  bottom: 20px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .register-button:hover {
-    background-color: white; 
-    color: #043B64;
-    border: 1px solid #043B64; 
+  background-color: white; 
+  color: #043B64;
+  border: 2px solid #043B64; 
 }
-
 
 .material-icons {
-    vertical-align: middle; 
-    padding-right: 5px;
+  vertical-align: middle; 
+  padding-right: 5px;
 }
-
 
 .escolas {
-    color: #403939;
-    font-size: 14px;
+  color: #403939;
+  font-size: 14px;
 }
-  
+
 .centro-treinamento {
-    color: #043B64;
-    font-size: 14px;
-    font-weight: bold;
+  color: #043B64;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .navegar {
-    padding-top: 58px;
+  padding-top: 58px;
 }
-  
-  
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+  .logo img {
+    max-width: 88px;
+    height: auto;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 16px 0 16px;
+  }
+
+  .material-icons {
+    font-size: 20px;
+  }
+
+  /* Pesquisa */
+  .header {
+    align-items: center; 
+  }
+
+  .search-wrapper.active {
+    width: 200px; 
+  }
+
+  .search-wrapper .search-input {
+    font-size: 14px; 
+  }
+
+  /* Nav Continuação */
+  .background-container {
+    height: 496px;
+  }
+
+  .section {
+    padding: 0 106px 0 70px;
+  }
+
+  .category-info img {
+    max-width: 472px;
+  }
+
+  h1 {
+    padding-left: 24px;
+    padding-top: 248px;
+    font-size: 80px;
+  }
+
+  .info-container {
+    padding-left: 42px;
+  }
+
+  /* Parte da escola */
+  section {
+    padding: 32px 108px 24px 112px;
+  }
+}

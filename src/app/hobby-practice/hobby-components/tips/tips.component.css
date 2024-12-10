@@ -6,6 +6,8 @@ section {
     color: #043B64;
     font-size: 22px;
     font-weight: bold;
+    margin: 0;
+    padding-bottom: 24px;
 }
 
 .tips-share {
@@ -44,18 +46,15 @@ section {
     margin: 0;
 }
 
-
 .spacing {
     height: 20px;
 }
-
 
 .ratings-container {
     background-color: #fff;
     padding: 22px 0;
     display: flex;
     flex-direction: column;
-    padding-left: 170px;
     width: 930px;
 }
 

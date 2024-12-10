@@ -1,6 +1,5 @@
-<div class="ratings-container">
+<section>
     <h1 class="ratings-title">Avaliações:</h1>
-
     <div class="ratings-summary">
         <div class="container">
             <div class="div1">
@@ -11,7 +10,6 @@
                 </div>
             </div>
 
-          
             <div class="div2">
                 <div class="bar">
                     <div class="bar-fill" style="width: 100%;"></div>
@@ -33,7 +31,6 @@
 
         <hr class="separator">
 
-        
         <div class="rating-container">
             <div class="user-profile-container">
                 <img src="images/profile.png" class="user-profile-pic">
@@ -45,8 +42,6 @@
             </div>
         </div>
         
-        
-
         <div class="user-reviews">
             <div *ngFor="let review of reviews" class="user-review">
                 <img [src]="review.profilePic" class="user-profile-pic">
@@ -61,4 +56,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>

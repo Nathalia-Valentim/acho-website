@@ -1,11 +1,12 @@
-.ratings-container { 
+section { 
     background-color: #fff;
-    padding: 22px 0 0px 168px;
+    padding: 0 152px 24px 166px;
 }
 
 .ratings-title {
     font-size: 18px;
     color: #043B64;
+    margin: 0;
 }
 
 .ratings-summary {
@@ -16,8 +17,8 @@
 .container {
     display: flex;
     justify-content: space-between;
+    padding: 56px 0;
     align-items: center;
-    padding: 60px;
     width: 100%;
     max-width: 1340px; 
 }
@@ -53,39 +54,42 @@
     border-radius: 30px;
 }
 
+/* Avaliação */
 .separator {
     border: 1px solid #dfd2d2;
-    margin: 10px 0;
     border-radius: 30px;
-    max-width: 1410px;
+    margin: 0;
+}
+
+.rating-container {
+    padding-top: 40px;
+    margin: 0;
+    display: flex;
+    align-items: center; 
+    margin-bottom: 10px; 
 }
 
 .submit-rating {
     display: flex;
     align-items: center;
     border: 1px solid #043B64; 
-    border-radius: 15px;
-    padding: 20px 15px; 
-    height: 80px;
+    border-radius: 12px;
+    height: 88px;
     background-color: transparent;
-
- 
     max-width: 1300px; 
     width: 100%; 
 }
 
-
 .rating-input {
-    width: 68%;
+    width: 100%;
     font-size: 16px;
-    padding: 5px;
+    padding-left: 16px;
     border: none; 
     color: #403939;
     height: 100%;
-    resize: none;
-    outline: none;
-    background-color: transparent; 
-    border-radius: 4px; 
+    background-color: transparent;
+    border-radius: 4px;
+    display: flex;
 }
 
 .number-input {
@@ -93,7 +97,7 @@
     padding: 4px;
     font-size: 16px;
     border: 1px solid #043B64; 
-    height: 30px; 
+    height: 24px; 
     outline: none; 
     width: 40px; 
     border-radius: 10px; 
@@ -101,14 +105,8 @@
     font-family: dm sans;
 }
 
-.rating-container {
-    display: flex;
-    align-items: center; 
-    margin-bottom: 10px; 
-}
-
 .user-profile-container {
-    padding-right: 10px;
+    padding-right: 12px;
 }
 
 .user-profile-pic {
@@ -121,18 +119,16 @@
     cursor: pointer;
     background-color: transparent;
     border: none;
-    padding: 120px;
+    padding-right: 24px;
 }
 
 .user-reviews {
-    margin-top: 2px;
-    padding-left: 20px;
+    padding-top: 48px;
 }
 
 .user-review {
     display: flex;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding-bottom: 32px;
 }
 
 .user-profile-pic {
@@ -174,4 +170,12 @@
 .star-empty:before {
     content: '☆';
     color: #ddd; 
+}
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+    section {
+      padding: 0 108px 24px 112px;
+      overflow: visible; 
+    }
 }
