@@ -37,14 +37,18 @@
             </div>
             <div class="submit-rating">
                 <input type="text" [(ngModel)]="newComment" placeholder="Avalie..." class="rating-input">
-                <input type="number" [(ngModel)]="newRating" min="0" max="5" step="1" class="number-input">
-                <button (click)="addReview()" class="submit-button material-icons">send</button>
+                <div class="nota">
+                    <input type="number" [(ngModel)]="newRating" min="0" max="5" step="1" class="number-input">
+                </div>
+                <div class="enviar">
+                    <button (click)="addReview()" class="submit-button material-icons">send</button>
+                </div>
             </div>
         </div>
         
         <div class="user-reviews">
             <div *ngFor="let review of reviews" class="user-review">
-                <img [src]="review.profilePic" class="user-profile-pic">
+                <img [src]="review.profilePic" class="user-profile-comment">
                 <div class="review-text">
                     <span class="user-name">{{ review.username }}</span>
                     <span class="review-date">{{ review.date }}</span>

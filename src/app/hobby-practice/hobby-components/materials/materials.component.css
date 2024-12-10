@@ -50,7 +50,7 @@ img {
 /* Responsividade */
 @media screen and (max-width: 1024px) {
     section {
-      padding: 22px 108px 24px 112px;
+      padding: 22px 108px 24px 114px;
     }
 
     img {

@@ -1,6 +1,6 @@
 section {
   text-align: justify;
-  padding: 16px 152px 24px 166px;
+  padding: 22px 154px 0 166px;
   height: auto;
 }
 
@@ -57,13 +57,13 @@ p {
 /* Responsividade */
 @media screen and (max-width: 1024px) {
   section {
-    padding: 16px 108px 24px 112px;
+    padding: 22px 108px 0 114px;
   }
 }
 
 @media screen and (max-width: 768px) {
   section {
-    padding: 8px 62px 24px;
+    padding: 22px 62px 0 62px;
   }
 
   .image-text-section {
@@ -112,7 +112,7 @@ p {
 
 @media screen and (max-width: 480px) {
   section {
-    padding: 8px 42px 24px 38px;
+    padding: 18px 42px 0 38px;
   }
 
   .image-text-section {
@@ -162,7 +162,7 @@ p {
 
 @media screen and (max-width: 380px) {
   section {
-    padding: 8px 34px 24px 30px;
+    padding: 18px 34px 0 30px;
   }
 
   .image-text-section {

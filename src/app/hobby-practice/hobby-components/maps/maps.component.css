@@ -112,7 +112,7 @@ section {
 /* Responsividade */
 @media screen and (max-width: 1024px) {
   section {
-    padding: 12px 108px 0 114px;
+    padding: 22px 108px 0 114px;
   }
 
   .search-box {
@@ -125,7 +125,7 @@ section {
 
 @media screen and (max-width: 768px) {
   section {
-    padding: 12px 62px 24px;
+    padding: 22px 62px 0 62px;
   }
 
   .gray-text {
@@ -160,7 +160,7 @@ section {
 
 @media screen and (max-width: 480px) {
   section {
-    padding: 0 42px 24px 38px;
+    padding: 18px 42px 0 38px;
   }
 
   .gray-text {
@@ -205,7 +205,7 @@ section {
 
 @media screen and (max-width: 380px) {
   section {
-    padding: 0 42px 24px 38px;
+    padding: 18px 34px 0 30px;
   }
 
   .gray-text {

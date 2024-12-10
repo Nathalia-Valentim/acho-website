@@ -1,5 +1,5 @@
 section {
-    padding: 22px 152px 24px 166px;
+    padding: 22px 154px 0 166px;
 }
 
 .tips-title {
@@ -14,12 +14,14 @@ section {
     color: #043B64;
     font-size: 18px;
     font-weight: 500;
+    margin: 0;
+    padding-top: 24px;
 }
 
 .tips-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 15px;
+  gap: 16px;
   max-width: 100%;
 }
 
@@ -45,6 +47,7 @@ section {
     color: #403939;
     font-size: 17px;
     margin: 0;
+    text-align: justify;
 }
 
 .spacing {
@@ -53,7 +56,7 @@ section {
 
 .ratings-container {
     background-color: #fff;
-    padding: 22px 0;
+    padding: 16px 0 0;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -89,10 +92,9 @@ section {
 
 .submit-button {
     display: flex;
-    padding-bottom: 70px;
+    padding-top: 64px;
     border: none;
-    color: #000000;
-    padding: 15px;
+    color: #403939;
     font-size: 22px;
     background-color: transparent;
 }
@@ -115,17 +117,97 @@ section {
     width: 100px;
 }
 
-@media (max-width: 768px) {
-    .tips-title {
-        font-size: 20px;
-    }
-    .tips-gallery {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+    section {
+      padding: 22px 180px 0 114px;
     }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 768px) {
+    section {
+      padding: 22px 62px 0 62px;
+    }
+
+    .tips-title {
+        font-size: 20px;
+        padding-bottom: 24px;
+    }
+
+    .tips-share {
+        font-size: 18px;
+    }
+
+    .tip-text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section {
+      padding: 18px 42px 0 38px;
+    }
+
     .tips-gallery {
+        display: grid;
         grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+    .tips-title {
+        font-size: 18px;
+        padding-bottom: 24px;
+    }
+
+    .tips-share {
+        font-size: 16px;
+    }
+
+    .tip-text {
+        font-size: 14px;
+    }
+
+    .tip-container {
+        grid-column: span 1 !important;
+    }
+
+    .rating-input {
+        width: 60%;
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+
+    .submit-button {
+        padding-top: 80px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    section {
+      padding: 18px 34px 0 30px;
+    }
+
+    .tips-gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+    .tips-title {
+        font-size: 16px;
+        padding-bottom: 24px;
+    }
+
+    .tips-share {
+        font-size: 15px;
+    }
+
+    .tip-text {
+        font-size: 13px;
+    }
+
+    .tip-container {
+        grid-column: span 1 !important;
     }
 }

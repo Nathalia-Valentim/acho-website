@@ -40,8 +40,10 @@
 .hobby-content p {
     color: #E15C31;
     text-align: start;
-    width: 148px;
+    width: 100%;
     font-size: 22px;
+    margin: 0;
+    padding-bottom: 16px;
 }
 
 .hobby-content:hover {

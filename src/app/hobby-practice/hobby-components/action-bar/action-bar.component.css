@@ -107,7 +107,7 @@ section {
 
 @media screen and (max-width: 768px) {
     section {
-        padding: 208px 62px 40px;
+        padding: 208px 62px 24px;
         overflow: visible;
     }
 

@@ -1,5 +1,5 @@
 section {
-  padding: 22px 154px 0px 166px;
+  padding: 22px 154px 0 166px;
 }
 
 .gray-text {
@@ -106,13 +106,13 @@ section {
 /* Responsividade */
 @media screen and (max-width: 1024px) {
   section {
-    padding: 12px 108px 24px 114px;
+    padding: 22px 108px 0 114px;
   }
 }
 
 @media screen and (max-width: 768px) {
   section {
-    padding: 0 66px 0 62px;
+    padding: 22px 62px 0 62px;
   }
 
   .gray-text {
@@ -139,7 +139,7 @@ section {
 
 @media screen and (max-width: 480px) {
   section {
-    padding: 0 42px 0 38px;
+    padding: 18px 42px 0 38px;
   }
 
   .gray-text {
@@ -168,6 +168,45 @@ section {
 
   .orange-text {
     font-size: 14px;
+    padding-right: 8px;
+  }
+
+  .max {
+    padding-left: 12px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  section {
+    padding: 18px 34px 0 30px;
+  }
+
+  .gray-text {
+    font-size: 15px;
+    padding-bottom: 16px;
+  }
+
+  .blue-text {
+    font-size: 14px;
+  }
+
+  .gray-info {
+    font-size: 14px;
+    padding-top: 6px;
+  }
+
+  .slider-container {
+    padding-top: 12px;
+  }
+
+  .price-input {
+    width: 60px;
+    padding: 6px 8px;
+    font-size: 15px;
+  }
+
+  .orange-text {
+    font-size: 13px;
     padding-right: 8px;
   }
 

@@ -1,6 +1,6 @@
 section {
     background-color: #fff;
-    padding: 0 152px 24px 166px;
+    padding: 0 154px 24px 166px;
 }
 
 .ratings-title {
@@ -20,7 +20,6 @@ section {
     padding: 56px 0;
     align-items: center;
     width: 100%;
-    max-width: 1340px;
 }
 
 .div1, .div2 {
@@ -93,16 +92,28 @@ section {
 }
 
 .number-input {
-    margin-right: 10px;
-    padding: 4px;
+    padding: 2px 8px;
     font-size: 16px;
     border: 1px solid #043B64;
     height: 24px;
+    width: 12px;
     outline: none;
-    width: 40px;
     border-radius: 10px;
     background-color: transparent;
     font-family: dm sans;
+}
+
+.nota {
+    padding-top: 40px;
+    padding-right: 16px;
+}
+
+.enviar {
+    padding-top: 44px;
+}
+
+.material-icons {
+    color: #403939;
 }
 
 .user-profile-container {
@@ -136,6 +147,13 @@ section {
     height: 70px;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+.user-profile-comment {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 16px;
 }
 
 .review-text {
@@ -175,7 +193,92 @@ section {
 /* Responsividade */
 @media screen and (max-width: 1024px) {
     section {
-      padding: 0 108px 24px 112px;
-      overflow: visible;
+      padding: 32px 108px 0 112px;
+    }
+
+    .nota {
+        padding-top: 40px;
+        padding-right: 12px;
+    }
+    
+    .enviar {
+        padding-top: 44px;
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    section {
+      padding: 32px 62px 0 62px;
+    }
+
+    .container {
+        padding: 32px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section {
+      padding: 24px 42px 0 38px;
+    }
+
+    .container {
+        padding: 24px 0;
+    }
+    
+    .nota {
+        padding-top: 36px;
+        padding-right: 4px;
+    }
+    
+    .enviar {
+        padding-top: 40px;
+    }
+
+    .submit-button {
+        padding-right: 8px;
+    }
+
+    .number {
+        font-size: 56px;
+        padding-left: 25px;
+    }
+
+    .star {
+        font-size: 32px;
+    }
+
+    .rating-container {
+        padding-top: 32px;
+        margin: 0;
+    }
+
+    .user-profile-comment {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        margin-right: 12px;
+    }
+
+    .submit-rating {
+        height: 72px;
+    }
+
+    .user-name {
+        font-size: 16px;
+    }
+
+    .review-date {
+        font-size: 12px;
+    }
+
+    p {
+        text-align: justify;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section {
+      padding: 24px 34px 0 30px;
     }
 }

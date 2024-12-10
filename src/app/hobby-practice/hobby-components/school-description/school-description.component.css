@@ -58,7 +58,7 @@ nav {
 }
 
 .menu-actions a {
-  color: #E15C31;
+  color: #E3E2DD;
   display: flex;
   text-decoration: none;
 }
@@ -66,7 +66,6 @@ nav {
 .material-icons {
   font-size: 24px;
 }
-
 
 .overlay {
   position: fixed;
@@ -113,7 +112,6 @@ nav {
   font-weight: 600;
   padding: 0 0 10px 0;
 }
-
 
 .search-wrapper {
   display: flex;
@@ -207,7 +205,7 @@ h1 {
 
 /* Parte da escola */
 section {
-  padding: 32px 152px 24px 166px;
+  padding: 32px 154px 24px 166px;
 }
 
 .school-description {
@@ -306,9 +304,10 @@ section {
   border: 2px solid #043B64;
 }
 
-.material-icons {
+span.material-icons {
   vertical-align: middle;
-  padding-right: 5px;
+  font-size: 24px;
+  padding-right: 8px;
 }
 
 .escolas {
@@ -343,17 +342,17 @@ section {
     font-size: 20px;
   }
 
-  /* Pesquisa */
-  .header {
-    align-items: center;
+ /* Pesquisa */
+ .header {
+    align-items: center; 
   }
 
   .search-wrapper.active {
-    width: 200px;
+    width: 200px; 
   }
 
   .search-wrapper .search-input {
-    font-size: 14px;
+    font-size: 14px; 
   }
 
   /* Nav Continuação */
@@ -375,12 +374,429 @@ section {
     font-size: 80px;
   }
 
-  .info-container {
-    padding-left: 42px;
+  /* Parte da escola */
+  section {
+    padding: 32px 108px 0 112px;
+  }
+
+  .school-image {
+    width: 32%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .botao {
+    padding-top: 32px;
+  }
+
+  .register-button {
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 8px 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo img {
+    max-width: 88px;
+    height: auto;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 16px 0 16px;
+  }
+
+  .material-icons {
+    font-size: 20px;
+  }
+
+  /* Pesquisa */
+  .header {
+    align-items: center;
+  }
+
+  .search-wrapper.active {
+    width: 200px;
+  }
+
+  .search-wrapper .search-input {
+    font-size: 14px;
+  }
+
+  /* Nav Continuação */
+  .background-container {
+    height: 460px;
+  }
+
+  .section {
+    padding: 0 62px 0 26px;
+  }
+
+  .category-info img {
+    max-width: 408px;
+  }
+
+  h1 {
+    padding-left: 16px;
+    padding-top: 248px;
+    font-size: 58px;
   }
 
   /* Parte da escola */
   section {
-    padding: 32px 108px 24px 112px;
+    padding: 32px 62px 0 62px;
+  }
+
+  .image-container {
+    gap: 12px;
+  }
+
+  .school-name {
+    font-size: 20px;
+  }
+
+  .school-image {
+    width: 32.1%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .training-title {
+    font-size: 18px;
+  }
+
+  .description {
+    padding-top: 6px;
+  }
+
+  .botao {
+    padding-top: 20px;
+  }
+
+  .register-button {
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 8px 32px;
+  }
+
+  .info-section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px 0 0;
+    font-size: 16px;
+  }
+
+  .info-text {
+    padding-bottom: 16px;
+  }
+
+  .register-button {
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 8px 28px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Pesquisa */
+  .header {
+    align-items: center;
+  }
+
+  .search-wrapper.active {
+    width: 200px;
+  }
+
+  .search-wrapper .search-input {
+    font-size: 14px;
+  }
+
+  /* Nav Continuação */
+  header {
+    padding: 40px 40px 24px;
+  }
+  
+  .logo img {
+    max-width: 72px;
+    height: auto;
+  }
+
+  .nav-container nav {
+    flex-direction: column;
+  }
+
+  .user-actions a {
+    padding: 0 10px 0 10px;
+  }
+
+  .material-icons {
+    font-size: 22px;
+  }
+
+  /* Pesquisa */
+  .search-wrapper {
+    width: 32px; 
+  }
+
+  .search-wrapper.active {
+    width: 160px;
+    height: 32px;
+  }
+
+  .search-wrapper .search-input {
+    padding: 6px; 
+    font-size: 12px; 
+  }
+
+  /* Nav Continuação */
+  .background-container {
+    height: 472px;
+  }
+
+  .section {
+    padding: 0 44px 0 42px;
+  }
+
+  .category-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-info img {
+    max-width: 304px;
+  }
+
+  h1 {
+    padding-left: 0;
+    padding-top: 8px;
+    font-size: 58px;
+  }
+
+  /* Parte da escola */
+  .navegar {
+    padding-top: 34px;
+  }
+
+  section {
+    padding: 0 42px 0 38px;
+  }
+
+  .image-container {
+    gap: 6px;
+  }
+
+  .school-name {
+    font-size: 16px;
+  }
+
+  .school-image {
+    width: 32.4%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .training-title {
+    font-size: 16px;
+  }
+
+  .description {
+    padding-top: 6px;
+    font-size: 14px;
+  }
+
+  .botao {
+    padding-top: 20px;
+  }
+
+  .register-button {
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 8px 32px;
+  }
+
+  .info-section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px 0 0;
+    font-size: 14px;
+  }
+
+  .info-text {
+    padding-bottom: 16px;
+  }
+
+  .investment-box {
+    border-radius: 10px;
+    width: auto;
+    padding: 8px;
+  }
+  
+  .investment-minimium {
+    font-size: 16px;
+    padding-right: 5px;
+  }
+  
+  .cost-note {
+    font-size: 12px;
+  }
+
+  .register-button {
+    border-radius: 30px;
+    font-size: 14px;
+    padding: 6px 28px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  header {
+    padding: 40px 32px 24px;
+  }
+  
+  .logo img {
+    max-width: 60px;
+    height: auto;
+  }
+
+  .user-actions a {
+    padding: 0 8px 0 8px;
+  }
+
+  .material-icons {
+    font-size: 20px;
+  }
+
+  /* Pesquisa */
+  .search-wrapper {
+    width: 30px;
+  }
+
+  .search-wrapper.active {
+    width: 140px;
+  }
+
+  .search-wrapper .search-input {
+    padding: 6px;
+    font-size: 12px; 
+  }
+
+  /* Nav Continuação */
+  .background-container {
+    height: 440px;
+  }
+
+  .section {
+    padding: 0 36px 0 34px;
+  }
+
+  .category-info img {
+    max-width: 288px;
+  }
+
+  h1 {
+    padding-left: 26px;
+    padding-top: 8px;
+    font-size: 52px;
+  }
+
+  /* Nav Continuação */
+  .background-container {
+    height: 472px;
+  }
+
+  .section {
+    padding: 0 44px 0 42px;
+  }
+
+  .category-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-info img {
+    max-width: 288px;
+  }
+
+  h1 {
+    padding-left: 26px;
+    padding-top: 8px;
+    font-size: 52px;
+  }
+
+  /* Parte da escola */
+  .navegar {
+    padding-top: 34px;
+  }
+
+  section {
+    padding: 0 34px 0 30px;
+  }
+
+  .image-container {
+    gap: 6px;
+    padding-top: 8px;
+  }
+
+  .school-name {
+    font-size: 15px;
+  }
+
+  .school-image {
+    width: 32.4%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .training-title {
+    font-size: 16px;
+    padding-top: 16px;
+  }
+
+  .description {
+    padding-top: 6px;
+    font-size: 14px;
+  }
+
+  .botao {
+    padding-top: 20px;
+  }
+
+  .register-button {
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 8px 32px;
+  }
+
+  .info-section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 0 0;
+    font-size: 14px;
+  }
+
+  .info-text {
+    padding-bottom: 16px;
+  }
+
+  .investment-box {
+    border-radius: 10px;
+    width: auto;
+    padding: 8px;
+  }
+  
+  .investment-minimium {
+    font-size: 15px;
+    padding-right: 5px;
+  }
+  
+  .cost-note {
+    font-size: 12px;
+  }
+
+  .register-button {
+    border-radius: 30px;
+    font-size: 14px;
+    padding: 6px 24px;
   }
 }

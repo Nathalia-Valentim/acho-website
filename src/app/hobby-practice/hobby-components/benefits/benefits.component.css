@@ -1,5 +1,5 @@
 section {
-    padding: 22px 152px 24px 166px;
+    padding: 22px 154px 0 166px;
     box-sizing: border-box;
 }
 
@@ -96,7 +96,7 @@ p {
 /* Responsividade */
 @media screen and (max-width: 1024px) {
     section {
-      padding: 22px 108px 24px 112px;
+      padding: 22px 108px 0 114px;
     }
 
     .container, .container-direita {
@@ -106,7 +106,7 @@ p {
 
 @media screen and (max-width: 768px) {
     section {
-      padding: 22px 62px 24px 62px;
+      padding: 22px 62px 0 62px;
     }
 
     .container, .container-direita {
@@ -152,7 +152,7 @@ p {
 
 @media screen and (max-width: 480px) {
     section {
-      padding: 22px 42px 24px 38px;
+      padding: 18px 42px 0 38px;
     }
 
     .container, .container-direita {
@@ -202,7 +202,7 @@ p {
 
 @media screen and (max-width: 380px) {
     section {
-      padding: 22px 34px 24px 30px;
+      padding: 18px 34px 0 30px;
     }
 
     .container, .container-direita {

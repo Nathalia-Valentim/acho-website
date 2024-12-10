@@ -1,5 +1,5 @@
 section {
-  padding: 22px 160px 0 168px;
+  padding: 22px 154px 0 166px;
 }
   
 .titulo {
@@ -79,13 +79,13 @@ h3 {
 /* Responsividade */
 @media screen and (max-width: 1024px) {
   section {
-    padding: 22px 108px 24px 112px;
+    padding: 22px 108px 0 114px;
   }
 }
 
 @media screen and (max-width: 768px) {
   section {
-    padding: 0 0 24px 62px;
+    padding: 22px 0 0 62px;
   }
 
   .titulo {
@@ -126,7 +126,7 @@ h3 {
 
 @media screen and (max-width: 480px) {
   section {
-    padding: 0 0 24px 38px;
+    padding: 18px 0 0 38px;
   }
 
   .titulo {
@@ -168,7 +168,7 @@ h3 {
 
 @media screen and (max-width: 380px) {
   section {
-    padding: 0 0 24px 30px;
+    padding: 18px 0 0 30px;
   }
 
   .titulo {
