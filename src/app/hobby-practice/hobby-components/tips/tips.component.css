@@ -1,19 +1,17 @@
+section {
+    padding: 22px 152px 24px 166px;
+}
 
 .tips-title {
     color: #043B64;
     font-size: 22px;
     font-weight: bold;
-    padding-left: 170px;
-    padding-top: 15px;
-    padding-bottom: 25px;
 }
 
 .tips-share {
     color: #043B64;
     font-size: 18px;
     font-weight: 500;
-    padding-left: 170px;
-    padding-top: 15px;
 }
 
 .tips-gallery {
@@ -21,8 +19,6 @@
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 15px;
     max-width: 60%;
-    padding-left: 170px;
-    padding-right: 740px;
 }
 
 .tip-container {

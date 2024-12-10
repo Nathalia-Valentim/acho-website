@@ -46,8 +46,6 @@
 }
 
 
-
-
 /* Ajustes para telas com largura máxima de 1024px (tablets) */
 @media (max-width: 1024px) {
     .barra-horizontal {

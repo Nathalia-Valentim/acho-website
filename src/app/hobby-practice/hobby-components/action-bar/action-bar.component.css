@@ -74,6 +74,7 @@ section {
     font-weight: 600;
 }
 
+/* Responsividade */
 @media screen and (max-width: 1024px) {
     section {
       padding: 256px 108px 24px 112px;

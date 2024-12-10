@@ -12,6 +12,7 @@ import { FooterComponent } from '../../../shared/components/footer/footer.compon
   templateUrl: './materials.component.html',
   styleUrl: './materials.component.css'
 })
+
 export class MaterialsComponent {
 
 }

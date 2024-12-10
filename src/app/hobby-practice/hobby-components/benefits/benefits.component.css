@@ -1,28 +1,33 @@
-.container-prin {
-    padding: 22px 160px 0 168px;
+section {
+    padding: 22px 152px 24px 166px;
+    box-sizing: border-box;
 }
 
 .container, .container-direita {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 5px;
     width: 100%;
-    max-width: 800px;
+    display: flex;
+    padding-bottom: 16px;
 }
 
 .container {
-    justify-content: flex-start; /* Mantém os ícones à esquerda */
+    justify-content: flex-start;
+}
+
+.container p {
+    text-align: justify;
 }
 
 .container-direita {
-    justify-content: flex-end; /* Mantém os ícones à direita */
+    justify-content: flex-end;
 }
 
-/* Ajuste no container-direita */
-.container-direita {
-    padding-left: 188px; /* Alinha o conteúdo à direita da tela */
-    text-align: right; /* Alinha o texto à direita */
+.container-direita p {
+    text-align: justify;
+    direction: rtl;
+}
+
+p {
+    margin: 0;
 }
 
 .circulo, .circulo-direita {
@@ -36,11 +41,11 @@
 }
 
 .circulo {
-    margin-right: 15px; /* Ajusta a margem para um espaçamento maior */
+    margin-right: 16px;
 }
 
 .circulo-direita {
-    margin-left: 15px; /* Ajusta a margem para um espaçamento maior */
+    margin-left: 16px;
 }
 
 .img-corre {
@@ -58,15 +63,27 @@
     height: 35px;
 }
 
-.conteudo {
-    max-width: 400px; /* Limita a largura do conteúdo */
+.conteudo, .conteudo-direita {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.titulo-esquerda, .titulo-direita {
+.container-direita {
+    text-align: right;
+}
+
+.titulo-esquerda {
     font-weight: bold;
     font-size: 22px;
     color: #043B64;
-    margin-bottom: 5px;
+}
+
+.titulo-direita {
+    font-weight: bold;
+    font-size: 22px;
+    color: #043B64;
 }
 
 .texto-esquerda, .texto-direita {
@@ -74,4 +91,151 @@
     color: #403939;
     font-weight: 100;
     line-height: 1.5em;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+    section {
+      padding: 22px 108px 24px 112px;
+    }
+
+    .container, .container-direita {
+        padding-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+      padding: 22px 62px 24px 62px;
+    }
+
+    .container, .container-direita {
+        padding-bottom: 32px;
+    }
+
+    .circulo, .circulo-direita {
+        width: 96px;
+        height: 96px;
+    }
+
+    .img-corre {
+        width: 40px;
+        height: 48px;
+    }
+    
+    .img-bola, .img-cabeca {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .img-pessoas {
+        width: 48px;
+        height: 28px;
+    }
+
+    .titulo-esquerda {
+        font-weight: bold;
+        font-size: 20px;
+        color: #043B64;
+    }
+    
+    .titulo-direita {
+        font-weight: bold;
+        font-size: 20px;
+        color: #043B64;
+    }
+    
+    .texto-esquerda, .texto-direita {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section {
+      padding: 22px 42px 24px 38px;
+    }
+
+    .container, .container-direita {
+        padding-bottom: 32px;
+    }
+
+    .circulo, .circulo-direita {
+        width: 80px;
+        height: 80px;
+    }
+
+    .img-corre {
+        width: 32px;
+        height: 40px;
+    }
+    
+    .img-bola, .img-cabeca {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .img-pessoas {
+        width: 40px;
+        height: 24px;
+    }
+
+    .conteudo, .conteudo-direita {
+        max-width: 224px;
+    }
+
+    .titulo-esquerda {
+        font-weight: bold;
+        font-size: 16px;
+        color: #043B64;
+    }
+    
+    .titulo-direita {
+        font-weight: bold;
+        font-size: 16px;
+        color: #043B64;
+    }
+    
+    .texto-esquerda, .texto-direita {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    section {
+      padding: 22px 34px 24px 30px;
+    }
+
+    .container, .container-direita {
+        padding-bottom: 32px;
+    }
+
+    .circulo, .circulo-direita {
+        width: 72px;
+        height: 72px;
+    }
+    
+    .img-pessoas {
+        width: 40px;
+        height: 20px;
+    }
+
+    .conteudo, .conteudo-direita {
+        max-width: 208px;
+    }
+
+    .titulo-esquerda {
+        font-weight: bold;
+        font-size: 15px;
+        color: #043B64;
+    }
+    
+    .titulo-direita {
+        font-weight: bold;
+        font-size: 15px;
+        color: #043B64;
+    }
+    
+    .texto-esquerda, .texto-direita {
+        font-size: 13px;
+    }
 }
