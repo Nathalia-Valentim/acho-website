@@ -1,200 +1,328 @@
-.page {
-    padding: 0 164px 0 166px;
-  }
-  
-  .central-atendimento-container {
-    position: relative;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+section {
+  padding: 0 152px 0 166px;
+}
+
+.central-atendimento-container {
+  position: relative;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.text-container {
+  padding-bottom: 50px;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; 
+}
+
+.central-atendimento-container h2 {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); 
+}
+
+.contact-form-container {
+  padding: 10px 120px;
+  background-color: white;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #E15C31;
+  padding: 32px 0 24px;
+  margin: 0;
+}
+
+.select-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.select-container select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #E15C31;
+  border-radius: 10px;
+  min-height: 60px;
+  font-size: 16px;
+  color: #403939;
+  background: transparent;
+}
+
+.select-container select:focus {
+  outline: none;
+  border-color: #E15C31;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-container input {
+  padding-top: 6px; 
+}
+
+.input-text {
+  color: #E15C31;
+  font-weight: 500;
+}
+
+.input-container input,
+.input-container textarea {
+  width: 100%;
+  padding: 12px 12px;
+  border: 1px solid #E15C31;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: dm Sans;
+  min-height: 60px;
+}
+
+.input-container input:focus,
+.input-container textarea:focus {
+  border-color: #E15C31;
+  outline: none;
+  box-shadow: 0 0 5px rgba(110, 48, 23, 0.5);
+}
+
+.email-description {
+  font-size: 14px;
+  color: #403939;
+  text-align: justify;
+}
+
+.btn-container {
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+}
+
+.btn-envia {
+  background-color: #E15C31;
+  color: #fff;
+  border: none;
+  padding: 12px 48px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-envia:disabled {
+  background-color: #E15C31;
+  cursor: not-allowed;
+}
+
+.btn-envia:hover:not(:disabled) {
+  background-color: #D04E2C;
+}
+
+.empresa-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.empresa-content {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #E15C31;
+  padding: 28px;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.empresa-image {
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  padding-right: 20px;
+}
+
+.empresa-text {
+  flex-grow: 1;
+}
+
+.empresa-text p {
+  font-size: 16px;
+  color: #403939;
+  padding-bottom: 20px;
+  text-align: justify;
+  margin: 0;
+}
+
+.btn-custom {
+  background-color: #E15C31;
+  color: #fff;
+  border: none;
+  padding: 10px 48px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: #C85F1B;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+  section {
+    padding: 0 106px 0 114px;
   }
 
-  .text-container {
-    padding-bottom: 50px;
-  }
-  
-  .background-image {
-    position: absolute;
-    padding-left: 172px;
-    padding-right: 122px;
-    border-radius: 30px;
-    top: 0;
-    left: 0;
-    width: 81%;
-    height: 81%;
-    object-fit: cover;
-    z-index: -1; 
-  }
-  
-  .central-atendimento-container h2 {
-    color: white;
-    font-size: 50px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); 
-  }
-  
-  
   .contact-form-container {
-    padding: 10px 120px;
-    background-color: white;
+    padding: 0;
   }
-  
-  .contact-form-container h2 {
-    text-align: center;
-    font-size: 24px;
-    color: #E15C31;
-    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 0 64px 0 66px;
   }
-  
+
+  .contact-form-container {
+    padding: 0;
+  }
+
+  .empresa-image {
+    width: 240px;
+    height: auto;
+    border-radius: 15px;
+    padding-right: 20px;
+  }
+
+  .empresa-text p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    padding: 0 42px 0 42px;
+  }
+
+  .central-atendimento-container {
+    height: 200px;
+  }
+
+  .central-atendimento-container h2 {
+    font-size: 32px;
+  }
+
+  h2 {
+    padding: 24px 0 16px;
+    font-size: 20px;
+  }
+
+  .input-text {
+    font-size: 14px;
+  }
+
   .select-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
     margin-bottom: 20px;
   }
   
   .select-container select {
     width: 100%;
     padding: 8px;
-    border: 1px solid #E15C31;
-    border-radius: 10px;
-    min-height: 60px;
-    font-size: 1rem;
-    color: #403939;
-    background: transparent;
+    border-radius: 8px;
+    min-height: 40px;
+    font-size: 14px;
   }
-  
-  .select-container select:focus {
-    outline: none;
-    border-color: #E15C31;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .select-container i {
-    position: absolute;
-    right: 10px;
-    pointer-events: none;
-    font-size: 1rem;
-    color: #E15C31;
-  }
-  
-  .input-container {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  
-  .input-container input {
-    padding-top: 6px; 
-  }
-  
-  .input-text {
-    color: #E15C31;
-    font-weight: 500;
-  }
-  
+
   .input-container input,
   .input-container textarea {
     width: 100%;
     padding: 12px 12px;
-    border: 1px solid #E15C31;
-    border-radius: 10px;
-    box-sizing: border-box;
-    font-size: 1rem;
-    font-family: dm Sans;
-    min-height: 60px;
+    border-radius: 8px;
+    font-size: 14px;
+    min-height: 40px;
   }
-  
-  .input-container input:focus,
-  .input-container textarea:focus {
-    border-color: #E15C31;
-    outline: none;
-    box-shadow: 0 0 5px rgba(110, 48, 23, 0.5);
-  }
-  
+
   .email-description {
-    font-size: 0.895rem;
-    color: #403939;
-    text-align: justify;
+    margin: 0;
+    padding-bottom: 24px;
   }
-  
-  .btn-custom {
-    background-color: #E15C31;
-    color: #fff;
-    border: none;
-    padding: 8px 45px;
-    font-size: 1rem;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+
+  .contact-form-container {
+    padding: 0;
   }
-  
-  .btn-custom:disabled {
-    background-color: #E15C31;
-    cursor: not-allowed;
-  }
-  
-  .btn-custom:hover:not(:disabled) {
-    background-color: #D04E2C;
-  }
-  
-  .empresa-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 20px;
-  }
-  
-  .empresa-content {
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
-    border: 1px solid #E15C31;
-    padding: 20px;
-    width: 100%;
-    max-width: 1400px;
-  }
-  
-  .empresa-image {
-    width: 300px;
-    height: auto;
-    border-radius: 15px;
-    padding-right: 20px;
-  }
-  
-  .empresa-text {
-    flex-grow: 1;
-  }
-  
-  .empresa-text p {
-    font-size: 16px;
-    color: #403939;
-    padding-bottom: 20px;
-    text-align: justify;
-  }
-  
+
   .btn-container {
+    padding-bottom: 24px;
     display: flex;
     justify-content: flex-end;
     padding-top: 20px;
   }
   
-  .btn-custom {
-    background-color: #E15C31;
-    color: #fff;
-    font-family: dm sans;
-    padding: 15px 35px;
-    border: none;
+  .btn-envia {
+    padding: 10px 40px;
+    font-size: 14px;
     border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  }
+
+  .empresa-content {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .empresa-image {
+    width: 288px;
+    height: auto;
+    border-radius: 15px;
+    padding-right: 0px;
+  }
+
+  .empresa-text p {
+    font-size: 14px;
+    padding-top: 24px;
+  }
+
+  .btn-container {
+    padding-top: 20px;
   }
   
-  .btn-custom:hover {
-    background-color: #C85F1B;
+  .btn-custom {
+    padding: 10px 40px;
+    font-size: 14px;
+    border-radius: 10px;
   }
-  
+}
+
+@media screen and (max-width: 380px) {
+  section {
+    padding: 0 32px 0 34px;
+  }
+
+  .empresa-image {
+    width: 260px;
+    height: auto;
+    border-radius: 15px;
+    padding-right: 0px;
+  }
+}

@@ -1,7 +1,5 @@
-.container {
-    max-width: 1600px;
-    padding: 0 20px;
-    margin: 0 auto; 
+section {
+    padding: 22px 154px 56px 166px;
     box-sizing: border-box;
 }
 

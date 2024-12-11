@@ -1,16 +1,13 @@
 <app-navbar></app-navbar>
-<section class="page">
-    <div class="central-atendimento-container">
-        <img src="images/contate.webp" alt="Imagem de Contato" class="background-image">
-        <h2 class="text-container">Central de Atendimento</h2>
-      </div>
+<section>
+  <div class="central-atendimento-container">
+    <img src="images/contate.webp" alt="Imagem de Contato" class="background-image">
+    <h2 class="text-container">Central de Atendimento</h2>
+  </div>
       
 
-  <div class="contact-form-container" style="padding-left: 176px;">
-    
-
+  <div class="contact-form-container">
     <h2>ENVIAR SOLICITAÇÃO</h2>
-  
 
     <div class="select-container input-container">
       <label for="motivo" class="input-text">Selecione seu motivo</label>
@@ -20,7 +17,7 @@
         <option value="feedback">Feedback</option>
         <option value="outro">Outro</option>
       </select>
-      <i class="material-icons">arrow_drop_down</i>
+      
     </div>
   
 
@@ -36,20 +33,20 @@
     </div>
 
     <div class="btn-container">
-        <button class="btn-custom" type="submit">Enviar</button>
-      </div>
+      <button class="btn-envia" type="submit">Enviar</button>
+    </div>
   
  
   
-    <div class="empresa-info">
-        <div class="empresa-content">
-          <img src="images/contateimage.jpg" alt="Imagem de Empresa" class="empresa-image">
-          <div class="empresa-text">
-            <p>Se você representa uma empresa e deseja fazer parte da nossa plataforma, o ACHÔ oferece uma excelente oportunidade para conectar sua marca a um público engajado e interessado em expandir seus conhecimentos e experiências. Cadastre sua empresa preenchendo o formulário abaixo e ele será avaliado em até 7 dias úteis. Estamos ansiosos para conhecê-los!</p>
-            <button class="btn-custom" (click)="navegarParaForms()">Preencher formulário</button>
-          </div>
-        </div>
+  <div class="empresa-info">
+    <div class="empresa-content">
+      <img src="images/contateimage.jpg" alt="Imagem de Empresa" class="empresa-image">
+      <div class="empresa-text">
+        <p>Se você representa uma empresa e deseja fazer parte da nossa plataforma, o ACHÔ oferece uma excelente oportunidade para conectar sua marca a um público engajado e interessado em expandir seus conhecimentos e experiências. Cadastre sua empresa preenchendo o formulário abaixo e ele será avaliado em até 7 dias úteis. Estamos ansiosos para conhecê-los!</p>
+        <button class="btn-custom" (click)="navegarParaForms()">Preencher formulário</button>
       </div>
     </div>
+  </div>
+</div>
 </section>
 <app-footer></app-footer>

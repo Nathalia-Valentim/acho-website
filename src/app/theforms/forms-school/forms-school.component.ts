@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NavgreenComponent } from "../../shared/components/navbar/navgreen/navgreen.component";
+import { NavbarComponent } from "../../shared/components/navbar/navbar.component";
 
 @Component({
   selector: 'app-forms-school',
   standalone: true,
-  imports: [FormsModule, NavgreenComponent],
+  imports: [FormsModule, NavgreenComponent, NavbarComponent],
   templateUrl: './forms-school.component.html',
   styleUrl: './forms-school.component.css'
 })
